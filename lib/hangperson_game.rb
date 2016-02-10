@@ -26,7 +26,7 @@ class HangpersonGame
   end
   
   def guess(letter)
-    if not letter =~ /^[A-Za-z]$/
+    if letter !~ /^[A-Za-z]$/
       raise ArgumentError
     end
     
